@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+fastapi = {extras = ["standard"], version = "*"}
+sqlalchemy = "*"
+pydantic-settings = "*"
+pymysql = "*"
+passlib = {extras = ["bcrypt"], version = "*"}
+python-jose = {extras = ["cryptography"], version = "*"}
+authlib = "*"
+itsdangerous = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"
