@@ -1,5 +1,4 @@
 .env
 *.json
-secret_keys.json
 *.pem
 *.key

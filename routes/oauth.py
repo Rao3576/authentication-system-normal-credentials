@@ -7,7 +7,7 @@ from database import get_db
 from models.user import User
 from utils.user import create_token  # your JWT generator
 
-router = APIRouter()
+router = APIRouter(prefix="/Oauth", tags=["User Details"])
 oauth = OAuth()
 
 oauth.register(

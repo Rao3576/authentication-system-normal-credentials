@@ -9,7 +9,7 @@ import utils.verify_emails
 
 
 
-router=APIRouter()
+router=APIRouter(prefix="/user", tags=["User Details"])
 
 
 @router.post("/register")

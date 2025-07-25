@@ -6,6 +6,8 @@ from routes.user import router as router
 from routes.oauth import router as oauth_router
 #from routes.oauth import google_auth
 from starlette.middleware.sessions import SessionMiddleware
+from routes import book  # add this
+
 
 Base.metadata.create_all(bind=engine)
 
@@ -40,5 +42,5 @@ app.add_middleware(
 
 app.include_router(router)
 app.include_router(oauth_router)
-
+app.include_router(book.router)  # add this
 #app.include_router(google_auth.router)
